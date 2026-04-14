@@ -7,6 +7,7 @@ This repository is the **central source of truth** for all solution agents. It d
 - [`procedures/global-instructions.md`](procedures/global-instructions.md) — General coding standards, conciseness rules, and error handling protocols.
 - [`procedures/solution-architecture.md`](procedures/solution-architecture.md) — Guidelines for building scalable solutions. Agents working on repositories whose name starts with `sol-` **must** check this file.
 - [`procedures/solution-naming.md`](procedures/solution-naming.md) — Naming conventions for solution repositories. Agents working on repositories whose name starts with `ldr-` **must** check this file.
+- [`procedures/catalog-items.md`](procedures/catalog-items.md) — Best practices for creating Catalog items on docs.dataminer.services.
 - [`procedures/agent-persona.md`](procedures/agent-persona.md) — Defines the "Senior Solution Architect" persona that all agents should adopt.
 - [`procedures/severity-enforcement.md`](procedures/severity-enforcement.md) — **Defines how to distinguish between blocking errors and warnings** in all instruction files.
 
