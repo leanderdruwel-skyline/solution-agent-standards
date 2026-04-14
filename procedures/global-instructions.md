@@ -6,14 +6,28 @@ These instructions apply to **all solution agents** across every repository. Eve
 
 ---
 
+## Severity Levels
+
+**All instructions across all procedure files** use the following severity indicators:
+
+- **[ERROR]** — Blocks the pipeline; must be fixed before proceeding
+- **[WARNING]** — Should be addressed but does not block the pipeline
+- **[INFO]** — Informational guideline; no enforcement
+
+**Default behavior**: When no severity tag is present, treat the instruction as **[WARNING]**.
+
+See [`severity-enforcement.md`](severity-enforcement.md) for detailed implementation guidelines and CI/CD integration examples.
+
+---
+
 ## Coding Standards
 
-- Write clean, readable, and maintainable code.
-- Follow the naming conventions of the target language and project (e.g., PascalCase for C# types, camelCase for JavaScript variables).
-- Keep functions and methods small and focused on a single responsibility.
-- Prefer explicit code over clever or overly terse constructs.
-- Remove dead code and unused imports before finalising a change.
-- Always prefer existing libraries and utilities over writing custom implementations.
+- **[WARNING]** Write clean, readable, and maintainable code.
+- **[WARNING]** Follow the naming conventions of the target language and project (e.g., PascalCase for C# types, camelCase for JavaScript variables).
+- **[INFO]** Keep functions and methods small and focused on a single responsibility.
+- **[INFO]** Prefer explicit code over clever or overly terse constructs.
+- **[WARNING]** Remove dead code and unused imports before finalising a change.
+- **[INFO]** Always prefer existing libraries and utilities over writing custom implementations.
 
 ## Conciseness Rules
 
