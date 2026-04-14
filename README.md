@@ -1,4 +1,4 @@
-# solution-agent-standards
+# solution-policies-hub
 
 This repository is the **central source of truth** for all solution agents. It defines the standards, procedures, and personas that every agent must follow when working on DataMiner solutions.
 
@@ -25,4 +25,5 @@ All instructions use severity tags to indicate enforcement level:
 - **[INFO]** — Informational guideline; no enforcement
 
 See [`procedures/severity-enforcement.md`](procedures/severity-enforcement.md) for implementation details and CI/CD integration examples.
+
 
