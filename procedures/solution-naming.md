@@ -10,4 +10,4 @@ These guidelines apply to all agents working on **solution repositories**. If th
 
 ## Naming Conventions
 
-- **[ERROR]** The name of every file in the Files folder must start with `SOL-` to indicate that it is a solution repository. If that is not the case, report an error that blocks the pipeline.
+- **[ERROR]** The name of every file in the optional Files folder must start with `SOL-` to indicate that it is a solution repository. If that is not the case, report an error that blocks the pipeline.
