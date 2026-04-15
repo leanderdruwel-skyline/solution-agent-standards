@@ -295,6 +295,7 @@ When reviewing a repository against these guidelines:
 ## Output Format
 
 When validating a repository against these guidelines, provide:
+- **Summary**: Overall compliance status for each of the validation items mentioned in the Validation Process section (e.g., "Compliant", "Non-compliant with X errors and Y warnings")
 - **Compliant items**: Summary of correctly configured aspects
 - **Non-compliant items**: Detailed list of violations with severity
 - **Naming analysis**: Breakdown of the repository name into its acronym, item type, and item name components
