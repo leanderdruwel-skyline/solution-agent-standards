@@ -294,42 +294,10 @@ When reviewing a repository against these guidelines:
 
 ## Output Format
 
-When validating a repository against these guidelines, produce a results table grouped by policy. Each group corresponds to one policy file and lists every check from its Validation Process section in order.
+Use the standard validation output format defined in [../global-instructions.md](../global-instructions.md#validation-output-format).
 
-### Table structure
-
-For each policy file being applied, output a section header and a table:
+The section header for this policy's results block must read:
 
 ```
 ### cicd / github-guidelines
-
-| #  | Check                        | Severity | Status         | Notes                              |
-|----|------------------------------|----------|----------------|------------------------------------|
-| 1  | License                      | ERROR    | ✅ Compliant   |                                    |
-| 2  | Repository name              | ERROR    | ❌ Non-compliant | Customer acronym used in public repo |
-| 3  | Root README                  | ERROR    | ✅ Compliant   |                                    |
-| 4  | Project READMEs              | ERROR    | ⚠️ Non-compliant | ProjectX is missing a README       |
-| 5  | .gitignore                   | ERROR    | ✅ Compliant   |                                    |
-| 6  | Topics                       | ERROR    | ✅ Compliant   |                                    |
-| 7  | CI/CD workflows              | WARNING  | ⚠️ Non-compliant | Uses `build` workflow, not `complete` |
-| 8  | NuGet setup                  | WARNING  | N/A            | No NuGet packages in this repo     |
-| 9  | Dependabot config            | WARNING  | N/A            | No private NuGet feeds used        |
-
-**Result: ❌ 1 error · 1 warning · 2 N/A**
 ```
-
-### Status values
-
-| Status | Meaning |
-|--------|---------|
-| ✅ Compliant | Check passes with no issues |
-| ❌ Non-compliant | An `[ERROR]`-level rule is violated |
-| ⚠️ Non-compliant | A `[WARNING]`-level rule is violated |
-| N/A | Check does not apply to this repository |
-
-### Rules
-
-- The `#` column uses the same numbering as the Validation Process section of this file.
-- The **Notes** column is left empty when the check is compliant; fill it in for any non-compliant or N/A result.
-- The **Result** line below each table summarises the total error and warning count for that policy group.
-- When multiple policy files are applied in a single validation, output one table block per policy, then a final overall summary across all policies.
