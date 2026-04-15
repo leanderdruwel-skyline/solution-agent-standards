@@ -5,6 +5,9 @@ This repository is the **central source of truth** for all solution agents. It d
 ## Contents
 
 - [`policies/global-instructions.md`](policies/global-instructions.md) — General coding standards, conciseness rules, error handling protocols, and the **standard validation output format** used by all policy files.
+- **Catalog**:
+  - [`policies/catalog/catalog-manifest.md`](policies/catalog/catalog-manifest.md) — Validation rules for Catalog item creation: manifest name, type, tags, icon, versioning, ownership, and size limits.
+  - [`policies/catalog/catalog-documentation.md`](policies/catalog/catalog-documentation.md) — Validation rules for Catalog item documentation: required sections, content quality, and visual guidelines.
 - **CI/CD**:
   - [`policies/cicd/github-guidelines.md`](policies/cicd/github-guidelines.md) — Validation rules for GitHub repository setup and conventions.
 
